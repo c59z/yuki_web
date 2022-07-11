@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "css/info.css" %}>
+    <script src={% static "js/jquery-1.12.4.min.js" %}></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+	
+
+</head>
+<body>
+    {% if user.is_authenticated %}
+	<!-- 导航栏 -->
+    <div class="navbar navbar-inverse navbar-static-top">		
+		<div class="container">
+			
+			<!-- 定义logo和切换小图标   -->
+			<div class="navbar-header">
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- <a href="#" class="navbar-brand">LOGO</a> -->
+			</div>
+
+			<div class="collapse navbar-collapse" id="mymenu">
+				<!-- 定义菜单   -->
+				<ul class="nav navbar-nav">
+					<li><a href="/index">首页</a></li>
+					<li><a href="#">日记</a></li>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="logout/">注销</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 座右铭 -->
+	<div class="container motto">
+		<p>绷不住了家人们，这真是典中典，整活的带哥太能处了属于是。虽然不知道家人们如何评价，但我真是搁这笑啦了。不喜欢的家人们也摇了我吧我先润了。
+		</p>
+		<p> </p>
+		<p class="p_right">
+			《出处什么的已经不重要了》
+		</p>
+	</div>
+
+	<!-- 主站内容 -->
+	<div id="zan-bodyer">
+		<div class="container">
+			<div class="row">
+                <!-- 只有这里改了 -->
+                <!-- 用户信息 -->
+                <div class="mainstay col-md-12">
+                    <div id="userinfo">
+                        <div id="username">
+							<p>欢迎回来~ 初雪</p>
+						</div>
+                        <div id="userprofile">一堆信息</div>
+                    </div>
+                </div>
+
+			</div>
+		</div>
+	</div>
+    {% else %}
+        <li class="nav-item">
+            <a class="nav-link no-access" href="{% url 'userprofile:login' %}">非法访问,请登录</a>
+        </li>
+    {% endif %}
+
+	<span class="pid">ID:80414367</span>
+
+</body>
+</html>

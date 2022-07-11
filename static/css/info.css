@@ -1,0 +1,134 @@
+* {
+    /* font-family: "Microsoft YaHei"; */
+    font-family: "Helvetica";
+    font-size: 16px;
+}
+
+/* .font_set {
+    font-family: "华康少女字体W5";
+} */
+
+body {
+    background-image: url('../images/80414367_p0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+/* 导航栏内容 */
+.pid {
+    position: fixed;
+    color: rgb(202, 200, 200);
+    font-size: 16px;
+    right: 1%;
+    bottom: 1%;
+}
+
+/* 搜索框 */
+/* .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+} */
+
+/* 左边LOGO,会带动右边的标签 */
+/* .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+} */
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align:center;
+}
+/* 导航条颜色 */
+.navbar-inverse {
+    /* 背景颜色 */
+    background-color: rgba(87, 87, 87, 0.6);
+    /* 边框 */
+    border-color: rgba(87, 87, 87, 0.6);
+    /* 边框投影 */
+    box-shadow: 0px 5px 5px rgba(87, 87, 87, 0.6);
+}
+
+/* 鼠标移动到没有被选中的a标签时 */
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: rgba(147, 112, 219, 0.6);
+}
+/* 被选中的a标签 */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgba(148, 0, 211, 0.6);
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+/* 座右铭内容 */
+.motto {
+    overflow: hidden;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    border-radius: 2rem;
+    height: auto;
+    background-color: rgba(125, 125, 125, 0.6);
+    box-shadow: 0px 0px 25px 0px rgba(125, 125, 125, 0.6);
+}
+
+.p_right {
+    position: relative;
+    bottom: 0rem;
+    direction: rtl;
+    margin-bottom: 0px;
+}
+
+/* 以下为主站内容 */
+/* 左边的最父级内容 */
+#zan-bodyer {
+    padding: 30px 0;
+    /* background-color: skyblue; */
+}
+
+.mainstay {
+    background-color: rgba(125, 125, 125, 0.3);
+    border-radius: 20px;
+}
+
+#userinfo {
+    padding: 20px;
+    color: white;
+}
+
+#username p {
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    margin-right: 700px;
+}
+
+#userprofile {
+    /* display: inline-block; */
+    font-size: 18px;
+    margin: 20px;
+}
+
+.mybtn {
+    right: 100px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.no-access {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    display: inline-block;
+    color: red;
+    font-size: 24px;
+}
+

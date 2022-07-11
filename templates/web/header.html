@@ -1,0 +1,33 @@
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container" id="myheader">
+
+        <!-- 定义logo和切换小图标   -->
+        <div class="navbar-header">
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- <a href="#" class="navbar-brand">LOGO</a> -->
+        </div>
+
+        <div class="collapse navbar-collapse" id="mymenu">
+            <!-- 定义菜单   -->
+            <ul class="nav navbar-nav">
+                <li><a href="/index">首页</a></li>
+{#                <li><a href={% url 'article:index' %}>首页</a></li>#}
+                <li><a href={% url 'article:diary_index' %}>日记</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href={% url 'article:readme' %}>ReadMe</a></li>
+{#                <li><a href="#">留言</a></li>#}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 座右铭 -->
+<div class="container motto">
+    <p>白鸟可知悲哀，不染于天之蔚海之蓝，只徘徊于其间。</p>
+</div>

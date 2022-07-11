@@ -1,0 +1,341 @@
+* {
+    /* font-family: "Microsoft YaHei"; */
+    font-family: "Helvetica";
+    font-size: 16px;
+}
+
+/* .font_set {
+    font-family: "华康少女字体W5";
+} */
+
+.container{
+width: 1170px;
+max-width: none !important;
+}
+
+@media screen and (max-width: 1170px) {
+    body{
+    width: 1170px;
+    }
+}
+
+body {
+    background-image: url('../images/80414367_p0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+/* 导航栏内容 */
+.pid {
+    position: fixed;
+    color: rgb(202, 200, 200);
+    font-size: 16px;
+    right: 1%;
+    bottom: 1%;
+}
+
+/* 搜索框 */
+/* .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+} */
+
+/* 左边LOGO,会带动右边的标签 */
+/* .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+} */
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align:center;
+}
+/* 导航条颜色 */
+.navbar-inverse {
+    /* 背景颜色 */
+    background-color: rgba(87, 87, 87, 0.6);
+    /* 边框 */
+    border-color: rgba(87, 87, 87, 0.6);
+    /* 边框投影 */
+    box-shadow: 0px 5px 5px rgba(87, 87, 87, 0.6);
+}
+
+/* 鼠标移动到没有被选中的a标签时 */
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: rgba(147, 112, 219, 0.6);
+}
+/* 被选中的a标签 */
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgba(148, 0, 211, 0.6);
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+/* 座右铭内容 */
+.motto {
+    overflow: hidden;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
+    border-radius: 2rem;
+    height: auto;
+    background: url("../images/your name.jpg") no-repeat;
+    background-position: -192px -580px;
+    box-shadow: 0px 0px 25px 0px rgba(125, 125, 125, 0.6);
+}
+
+.motto p {
+    font-size: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+
+/* 以下为主站内容 */
+/* 左边的最父级内容 */
+#zan-bodyer {
+    padding: 30px 0;
+    /* background-color: skyblue; */
+}
+
+.mainstay {
+    background-color: rgba(125, 125, 125, 0.6);
+}
+/* 文章列表板块 */
+.article-list {
+    color: #fff;
+}
+/* 一个文章板块 */
+.article {
+    border-radius: 20px;
+    background-color: rgba(125, 125, 125, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(5, 5, 5, 0.6);
+    /* height: 300px; */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.article .article-title {
+    width: auto;
+    text-align: center;
+}
+.article .article-title a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    margin: 10px auto;
+    background-color: rgba(148, 0, 211, 0.6);
+}
+.article .article-title a:hover {
+    background-color: rgba(148, 0, 211, 0.8);
+    box-shadow: 0px 0px 20px 0px rgba(225, 225, 225, 0.6);
+}
+
+.article .article-content {
+    padding: 10px 30px;
+    text-align: center;
+    margin: 10px auto;
+    width: auto;
+    height: auto;
+}
+
+.article .tags{
+    text-align: center;
+    text-decoration: none;
+}
+
+.article .tags a:hover{
+    text-decoration: none;
+}
+
+
+.article .article-content .contents {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 20px;
+    box-shadow: 0px 0px 20px 0px rgba(225, 225, 225, 0.6);
+}
+
+.article .article-content .contents:hover {
+    box-shadow: 0px 0px 35px 0px rgba(225, 225, 225, 0.6);
+}
+
+.article .article-content a{
+    color: #fff;
+    /* text-indent: 40px; */
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+}
+.article .article-date {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    direction: rtl;
+    font-size: 16px;
+}
+
+.article .article-list img {
+
+}
+
+.diary-div {
+    padding: 20px;
+}
+
+/* 右边的最父级内容 */
+#sidebar {
+    width: auto;
+}
+
+/* 搜索框最父级 */
+#search {
+    border-radius: 10px;
+    width: 360px;
+    height: 50px;
+    background-color: rgba(22, 22, 22,0.4);
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 15px 0px rgba(150, 150, 150,0.4)
+}
+
+#searchform {
+    text-align:center;
+    line-height: 50px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: rgb(255,105,180);
+    border-color: rgb(255,105,180);
+}
+
+.form-inline .form-control {
+    color: #fff;
+    background-color: rgba(22, 22, 22,0.4);
+    border-color: rgba(255,105,180, 0.6);
+    display: inline-block;
+    margin-right: 10px;
+    width: 280px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px 0px rgba(255,105,180, 0.6);
+}
+/* 快捷标签 */
+#sub_menu {
+    border-radius: 10px;
+    width: 360px;
+    height: 150px;
+    background-color: rgba(22, 22, 22,0.4);
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px rgba(150, 150, 150,0.4);
+    margin-bottom: 40px;
+}
+
+#sub_menu a {
+    margin: 20px 47px;
+}
+
+#sub_menu a {
+    background-color: rgba(147, 112, 219, 0.6);
+    border: rgba(147, 112, 219, 0.6);;
+}
+
+#sub_menu a:hover {
+    background-color: rgba(148, 0, 211, 0.6);
+    border: rgba(148, 0, 211, 0.6);
+}
+
+#sub_tags {
+    border-radius: 10px;
+    width: 360px;
+    /* 这里以后注释掉，高度会根据内容自动适应 */
+    height: 250px;
+    background-color: rgba(22, 22, 22,0.4);
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 0px rgba(150, 150, 150,0.4)
+}
+#sub_tags .tags_head {
+    font-size: 24px;
+    color: #fff;
+    width: 360px;
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    text-indent: 24px;
+    line-height: 50px;
+    font-family: "华康少女文字W5";
+}
+
+.sub_label1 {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 20px;
+    color: #ddd;
+    background-color: rgba(42, 185, 230, 0.7);
+    border-radius: 20px;
+}
+.sub_label2 {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 20px;
+    color: #fff;
+    background-color: rgba(255,20,147, 0.7);
+    border-radius: 20px;
+}
+.sub_label3 {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 20px;
+    color: #fff;
+    background-color: rgba(60,179,113, 0.7);
+    border-radius: 20px;
+}
+.sub_label4 {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px 20px;
+    color: #fff;
+    background-color: rgba(255,165,0, 0.7);
+    border-radius: 20px;
+}
+
+#sub_tags .tags_body .sub_label1:hover {
+    color: #fff;
+    background-color: rgba(42, 185, 230, 0.9);
+}
+#sub_tags .tags_body .sub_label2:hover {
+    color: #fff;
+    background-color: rgba(255,20,147, 0.9);
+}
+#sub_tags .tags_body .sub_label3:hover {
+    color: #fff;
+    background-color: rgba(60,179,113, 0.9);
+}
+#sub_tags .tags_body .sub_label4:hover {
+    color: #fff;
+    background-color: rgba(255,165,0, 0.9);
+}
+
+.page {
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(22, 22, 22,0.4);
+    box-shadow: 0px 0px 15px 0px rgba(150, 150, 150,0.4);
+}
+
+#search_info {
+    padding: 10px 15px;
+    background-color: rgba(22, 22, 22,0.4);
+    box-shadow: 0px 0px 15px 0px rgba(150, 150, 150,0.4);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}

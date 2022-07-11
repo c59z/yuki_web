@@ -1,0 +1,78 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block title %}
+    本子昊牛逼
+{% endblock title %}
+
+{% block content %}
+{% if search %}
+    <div id="search_info">
+
+            {% if articles %}
+                <h4> <span style="color: white;font-size: 18px">关于 </span>  <span style="color: red;font-size: 18px">"{{ search }}"</span> <span style="color: white;font-size: 18px">搜索到以下内容:</span> </h4>
+            {% else %}
+                <h4> <span style="color: white;font-size: 18px">暂无关于 </span>  <span style="color: red;font-size: 18px">"{{ search }}"</span>  <span style="color: white;font-size: 18px">有关的文章。</span> </h4>
+            {% endif %}
+
+    </div>
+{% endif %}
+    {% for article in articles %}
+        <div class="article">
+            <div class="article-title">
+                <a href={% url 'article:article' article.id %}>{{ article.title }}</a>
+            </div>
+            <div class="tags">
+                {% for tag in article.tags.all %}
+                    <a href={% url 'article:index' %}?tag={{ tag }}><span class="label label-primary">{{ tag }}</span></a>
+                 {% endfor %}
+            </div>
+            <div class="article-content">
+                <div class="contents">
+                    <a href={% url 'article:article' article.id %}>{{ article.subtitle }}<br>
+                    </a>
+                </div>
+            </div>
+            <div class="article-date">
+                <span>{{ article.created }}</span>
+            </div>
+        </div>
+    {% endfor %}
+    {#  下方翻页栏  #}
+    <div class="page">
+        <div class="pagination row">
+            <div class="m-auto">
+        <span class="step-links">
+            <!-- 如果不是第一页，则显示上翻按钮 -->
+            {% if articles.has_previous %}
+                <a href="?page=1" class="btn btn-success">
+                    &laquo; 1
+                </a>
+                <a href="?page={{ articles.previous_page_number }}"
+                   class="btn btn-info">
+                    {{ articles.previous_page_number }}
+                </a>
+            {% endif %}
+
+            <!-- 当前页面 -->
+            <span class="current btn btn-danger btn-lg">
+                {{ articles.number }}
+            </span>
+
+            <!-- 如果不是最末页，则显示下翻按钮 -->
+            {% if articles.has_next %}
+{#                                                            &tag={{ tag }}#}
+                <a href="?page={{ articles.next_page_number }}"
+                   class="btn btn-info">
+                    {{ articles.next_page_number }}
+                </a>
+                <a href="?page={{ articles.paginator.num_pages }}"
+                   class="btn btn-success">
+                    {{ articles.paginator.num_pages }} &raquo;
+                </a>
+            {% endif %}
+        </span>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,37 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block title %}
+    ReadMe
+{% endblock title %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href={% static '/css/article.css' %}>
+{% endblock css %}
+
+
+{% block content %}
+    <div class="article">
+        <div class="article-title">
+            <p>ReadMe</p>
+        </div>
+        <div class="article-content">
+            <div class="contents">
+                <!-- 缺文章 -->
+                <h3>关于站长</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;(｡･∀･)ﾉﾞ嗨呀~你好,我是初雪,目前是一个平凡的大一新生,编程方面比较擅长Python和Java,前端苦手,正在自学日语,7月去考n2<br>
+                </p>
+                <h3>关于本站</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;本站于2022年5月由一个高三的学生创作，目的是为了学习前后端的交互。<br>
+                    本站后端采用了Django,前端使用了bootstrap。 <br>
+                    因为初出茅庐,经验稀少,网站可能会发生意想不到的bug（不过我自己测试倒是没问题）
+                    还请见谅。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;虽说人生只有一次无论做出哪个选择都会后悔，但即便如此我还是想坚持做自己喜欢的事情,通过这个网站来分享一下微薄的经验<br></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;我在这里,正是因为我还有没做完的事情在等着我</p>
+                <h3>联系我</h3>
+                <ul>
+                    <li>我的QQ邮箱:1654911578@qq.com</li>
+                    <li>我的网站:(现在还没有域名呜呜呜)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
