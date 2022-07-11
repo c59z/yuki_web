@@ -109,12 +109,13 @@ WSGI_APPLICATION = 'yuki_no_home.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 这里使用mysql数据库
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "yuki_web",
-        'HOST': "127.0.0.1",
-        'PORT': "3306",
-        'USER': "yuki",
-        'PASSWORD': "ayase",
+        'NAME': "db_name",
+        'HOST': "db_host",
+        'PORT': "db_port",
+        'USER': "user",
+        'PASSWORD': "password",
     }
 }
 
