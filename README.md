@@ -11,4 +11,4 @@ DataBase:        Mysql
 本项目仅供学习交流，请不要将此项目放在公网上运行，运行项目时请保留版权声明部分
 
 ### 预览图
-[![jgnVF.png](https://s1.328888.xyz/2022/08/04/jgnVF.png)](https://imgloc.com/i/jgnVF)
+![QQ图片20230607191122.png](https://s2.loli.net/2023/06/07/uftL12eG8Ka5iAJ.png)
